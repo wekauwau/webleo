@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('address');
             $table->boolean('gender');  // 0 female
             $table->string('pfp');
-            $$table->date('join_date');
+            $table->date('join_date');
             $table->rememberToken();
             $table->timestamps();
         });
