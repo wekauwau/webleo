@@ -16,19 +16,20 @@ class UserFactory extends Factory
      */
     protected static ?string $password;
 
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
     public function definition(): array
     {
         return [
-            'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),
+            // TODO: student_id
+            'name' => fake()->name(),
+            'cohort' => '24',
+            'address' => fake()->address(),
+            'gender' => fake()->boolean(),
+            // TODO: pfp
+            'join_date' => new \DateTime('2024-12-19'),
         ];
     }
 
