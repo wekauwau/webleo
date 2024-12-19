@@ -32,7 +32,7 @@
             {{ $slot }}
         </main>
 
-        <!--x-footer /-->
+        <x-layouts.footer />
     </div>
 
     @stack('modals')
