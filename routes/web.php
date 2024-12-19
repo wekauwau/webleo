@@ -25,3 +25,11 @@ Route::get('structure', function () {
 Route::get('activities', function () {
     return view('activities');
 })->name('activities');
+
+Route::get('insights', function () {
+    return view('insights');
+})->name('insights');
+
+Route::get('news', function () {
+    return view('news');
+})->name('news');

@@ -26,10 +26,10 @@
       <x-layouts.nav.link href="{{ route('activities') }}" :active="request()->routeIs('activities')">
         Kegiatan
       </x-layouts.nav.link>
-      <x-layouts.nav.link href="#">
+      <x-layouts.nav.link href="{{ route('insights') }}" :active="request()->routeIs('insights')">
         Wawasan
       </x-layouts.nav.link>
-      <x-layouts.nav.link href="#">
+      <x-layouts.nav.link href="{{ route('news') }}" :active="request()->routeIs('news')">
         Berita
       </x-layouts.nav.link>
       <x-layouts.nav.link href="#">
