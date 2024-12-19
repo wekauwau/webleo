@@ -21,29 +21,28 @@
     @livewireStyles
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="font-sans antialiased">
+    <!--x-banner /-->
 
-    <main class="flex-shrink-0">
-        <x-layouts.nav/>
+    <div class="min-h-screen bg-gray-100">
+        <x-layouts.nav />
 
-        {{ $slot }}
-    </main>
-
-    <!-- Footer-->
-    <footer class="bg-dark py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
-                <div class="col-auto">
-                    <a class="link-light small" href="#!">Privacy</a>
-                    <span class="text-white mx-1">&middot;</span>
-                    <a class="link-light small" href="#!">Terms</a>
-                    <span class="text-white mx-1">&middot;</span>
-                    <a class="link-light small" href="#!">Contact</a>
-                </div>
+        <!-- Page Heading -->
+        @if (isset($header))
+        <header class="bg-white shadow">
+            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                {{ $header }}
             </div>
-        </div>
-    </footer>
+        </header>
+        @endif
+
+        <!-- Page Content -->
+        <main>
+            {{ $slot }}
+        </main>
+
+        <!--x-footer /-->
+    </div>
 
     @stack('modals')
 
