@@ -9,10 +9,23 @@ class PositionSeeder extends Seeder
 {
     public function run(): void
     {
-        // TODO: finish
         $data = [
-            ['Ketua'],
+            // Pengurus harian
+            [1, 1, null],
+            [2, 2, null],
+            [3, 3, null],
+            [4, 4, null],
+            [5, 5, null],
+            [6, 6, null],
         ];
+
+        $divisionId = 1; // Start with division ID 1
+        for ($i = 7; $i <= 46; $i++) {
+            $data[] = [$i, null, $divisionId];
+            if (($i - 6) % 4 === 0) { // Every 4 entries, increment the division ID
+                $divisionId++;
+            }
+        }
 
         foreach ($data as $item) {
             Position::create([
