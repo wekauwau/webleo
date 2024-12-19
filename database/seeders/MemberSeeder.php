@@ -12,7 +12,7 @@ class MemberSeeder extends Seeder
         Member::factory(46)->create();
 
         $base = '24';
-        for ($i = 1; $$i < 47; $$i++) {
+        for ($i = 1; $i < 47; $i++) {
             Member::find($i)
                 ->update([
                     'student_id' => $base + sprintf('%02d', $i),
