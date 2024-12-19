@@ -18,7 +18,7 @@ class ImageSeeder extends Seeder
             ['wawasan-01.jpg'],
             ['wawasan-02.jpg'],
 
-            ['berita-01.webp'],
+            ['berita-00.webp'],
             ['berita-01.jpg'],
             ['berita-02.webp'],
         ];
