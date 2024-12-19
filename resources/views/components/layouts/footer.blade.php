@@ -24,7 +24,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <span class="block text-sm text-center text-gray-500 sm:text-center">
-            Copyright © 2024 <a href="" class="hover:underline">HIMATIKA UWU</a>
+            Copyright © 2024 <a href="#" class="hover:underline">HIMATIKA UWU</a>
         </span>
     </div>
 </footer>
