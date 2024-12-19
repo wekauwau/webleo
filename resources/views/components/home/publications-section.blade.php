@@ -3,7 +3,7 @@
         <!--something removed-->
         <div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             @foreach ($publications as $post)
-                <a rel="noopener noreferrer" href=""
+                <a rel="noopener noreferrer" href="#"
                     class="max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
                     <img role="presentation" class="object-cover w-full rounded h-44 dark:bg-gray-500"
                         src="{{ route('image', [$post->image->name]) }}">
@@ -22,7 +22,7 @@
             @endforeach
         </div>
         <div class="flex justify-center">
-            <a href=""
+            <a href="#"
                 class="px-6 py-3 text-sm rounded-md hover:underline dark:bg-gray-900 dark:text-gray-400">
                 Lihat {{ $more }} lain
             </a>
