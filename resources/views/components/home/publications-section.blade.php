@@ -1,5 +1,5 @@
-<section class="dark:bg-gray-800 dark:text-gray-100">
-    <div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
+<section class="py-3 dark:bg-gray-800 dark:text-gray-100">
+    <div class="container max-w-6xl p-6 mx-auto">
         <!--something removed-->
         <div class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             @foreach ($publications as $post)
