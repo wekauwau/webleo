@@ -1,2 +1,2 @@
-import "./bootstrap";
-require("bootstrap");
+import "./bootstrap"; // If you've set up bootstrap.js in resources/js/bootstrap.js
+import "bootstrap"; // This will import the Bootstrap JavaScript bundle
