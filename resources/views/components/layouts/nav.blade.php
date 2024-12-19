@@ -20,7 +20,7 @@
       <x-layouts.nav.link href="{{ route('about') }}" :active="request()->routeIs('about')">
         Tentang
       </x-layouts.nav.link>
-      <x-layouts.nav.link href="#">
+      <x-layouts.nav.link href="{{ route('structure') }}" :active="request()->routeIs('structure')">
         Struktur
       </x-layouts.nav.link>
       <x-layouts.nav.link href="#">
