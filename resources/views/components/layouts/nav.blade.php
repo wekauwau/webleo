@@ -32,9 +32,6 @@
       <x-layouts.nav.link href="{{ route('news') }}" :active="request()->routeIs('news')">
         Berita
       </x-layouts.nav.link>
-      <x-layouts.nav.link href="#">
-        Kontak
-      </x-layouts.nav.link>
     </ul>
   </div>
   </div>
