@@ -9,19 +9,28 @@ class PublicationSeeder extends Seeder
 {
     public function run(): void
     {
-        Publication::factory(5)
-            ->create([
-                'publication_type_id' => 1,
-            ]);
+        for ($i = 1; $i <= 3; $i++) {
+            Publication::factory(1)
+                ->create([
+                    'publication_type_id' => 2,
+                    'image_id' => $i,
+                ]);
+        }
 
-        Publication::factory(5)
-            ->create([
-                'publication_type_id' => 2,
-            ]);
+        for ($i = 1; $i <= 3; $i++) {
+            Publication::factory(1)
+                ->create([
+                    'publication_type_id' => 3,
+                    'image_id' => $i,
+                ]);
+        }
 
-        Publication::factory(5)
-            ->create([
-                'publication_type_id' => 3,
-            ]);
+        for ($i = 1; $i <= 3; $i++) {
+            Publication::factory(1)
+                ->create([
+                    'publication_type_id' => 1,
+                    'image_id' => $i,
+                ]);
+        }
     }
 }

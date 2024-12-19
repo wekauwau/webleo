@@ -11,6 +11,7 @@ return new class extends Migration
         Schema::create('publications', function (Blueprint $table) {
             $table->id();
             $table->foreignId('publication_type_id')->constrained();
+            $table->foreignId('image_id')->constrained();
             $table->string('title');
             $table->text('content');
             $table->timestamps();

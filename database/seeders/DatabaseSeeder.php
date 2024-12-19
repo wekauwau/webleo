@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
             ExecutiveSeeder::class,
             DivisionSeeder::class,
             PositionSeeder::class,
+            ImageSeeder::class,
             PublicationTypeSeeder::class,
             PublicationSeeder::class,
         ]);
