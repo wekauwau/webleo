@@ -22,7 +22,7 @@
             @endforeach
         </div>
         <div class="flex justify-center">
-            <a href="#"
+            <a href="{{ route($type) }}"
                 class="px-6 py-3 text-sm rounded-md hover:underline dark:bg-gray-900 dark:text-gray-400">
                 Lihat {{ $more }} lain
             </a>

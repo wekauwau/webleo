@@ -12,8 +12,10 @@ class PublicationsSection extends Component
 {
     public Collection $publications;
 
+    public string $type;
+
     public function __construct(
-        $publicationTypeId,
+        public int $publicationTypeId,
         public string $more,
     ) {
         $records = Publication::where('publication_type_id', $publicationTypeId)
@@ -23,6 +25,11 @@ class PublicationsSection extends Component
             ->get();
 
         $this->publications = $records;
+        $this->type = match ($publicationTypeId) {
+            1 => 'activities',
+            2 => 'insights',
+            3 => 'news',
+        };
     }
 
     public function render(): View|Closure|string
