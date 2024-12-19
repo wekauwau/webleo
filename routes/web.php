@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Division;
+use App\Models\Executive;
 use Illuminate\Support\Facades\Route;
 
 Route::get('images/{name}')
@@ -14,5 +16,8 @@ Route::get('about', function () {
 })->name('about');
 
 Route::get('structure', function () {
-    return view('structure');
+    $executives = Executive::with('position', 'position.member')->get();
+    $divisions = Division::with('leader', 'position', 'position.member')->get();
+
+    return view('structure', compact('executives', 'divisions'));
 })->name('structure');
