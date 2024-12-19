@@ -14,16 +14,16 @@
         <div class="flex items-center">
             <i class="fa-solid fa-book-open text-lg text-gray-500"></i>
             <h2 class="ms-3 text-xl font-semibold text-gray-900">
-                <a href="">Struktur</a>
+                <a href="#">Recruitment</a>
             </h2>
         </div>
 
         <p class="mt-4 text-gray-500 text-sm leading-relaxed">
-            Struktur pengurus HIMATIKA UWU.
+            Informasi pendaftaran pengurus HIMATIKA
         </p>
 
         <p class="mt-4 text-sm">
-            <a href="" class="inline-flex items-center font-semibold text-indigo-700">
+            <a href="#" class="inline-flex items-center font-semibold text-indigo-700">
                 Lebih lanjut
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="ms-1 w-5 h-5 fill-indigo-500">
@@ -39,16 +39,16 @@
         <div class="flex items-center">
             <i class="fa-solid fa-people-group text-lg text-gray-500"></i>
             <h2 class="ms-3 text-xl font-semibold text-gray-900">
-                <a href="">Kegiatan</a>
+                <a href="#">Beasiswa</a>
             </h2>
         </div>
 
         <p class="mt-4 text-gray-500 text-sm leading-relaxed">
-            Kegiatan HIMATIKA UWU.
+            Informasi beasiswa
         </p>
 
         <p class="mt-4 text-sm">
-            <a href="" class="inline-flex items-center font-semibold text-indigo-700">
+            <a href="#" class="inline-flex items-center font-semibold text-indigo-700">
                 Lebih lanjut
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="ms-1 w-5 h-5 fill-indigo-500">
