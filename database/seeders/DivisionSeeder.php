@@ -9,7 +9,7 @@ class DivisionSeeder extends Seeder
 {
     public function run(): void
     {
-        // TODO: leader_user_id
+        // TODO: leader_member_id
         $data = [
             ['Jurnalistik'],
             ['HRD'],
@@ -26,7 +26,7 @@ class DivisionSeeder extends Seeder
         foreach ($data as $item) {
             Division::create([
                 'name' => $item[0],
-                'leader_user_id' => $item[1],
+                'leader_member_id' => $item[1],
             ]);
         }
     }
