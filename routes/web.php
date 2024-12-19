@@ -33,3 +33,7 @@ Route::get('insights', function () {
 Route::get('news', function () {
     return view('news');
 })->name('news');
+
+Route::get('post/{id}', function (string $id) {
+    return view('post', compact('id'));
+})->name('post');
