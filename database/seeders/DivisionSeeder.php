@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Division;
 use Illuminate\Database\Seeder;
 
 class DivisionSeeder extends Seeder
@@ -23,7 +24,7 @@ class DivisionSeeder extends Seeder
         ];
 
         foreach ($data as $item) {
-            Executive::create([
+            Division::create([
                 'name' => $item[0],
                 'leader_user_id' => $item[1],
             ]);
