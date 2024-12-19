@@ -23,7 +23,7 @@
       <x-layouts.nav.link href="{{ route('structure') }}" :active="request()->routeIs('structure')">
         Struktur
       </x-layouts.nav.link>
-      <x-layouts.nav.link href="#">
+      <x-layouts.nav.link href="{{ route('activities') }}" :active="request()->routeIs('activities')">
         Kegiatan
       </x-layouts.nav.link>
       <x-layouts.nav.link href="#">

@@ -21,3 +21,7 @@ Route::get('structure', function () {
 
     return view('structure', compact('executives', 'divisions'));
 })->name('structure');
+
+Route::get('activities', function () {
+    return view('activities');
+})->name('activities');
