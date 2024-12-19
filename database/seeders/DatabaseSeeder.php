@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
             ExecutiveSeeder::class,
             DivisionSeeder::class,
             PositionSeeder::class,
+            PublicationTypeSeeder::class,
         ]);
     }
 }
