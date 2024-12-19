@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 class Position extends Pivot
 {
     protected $fillable = [
-        'user_id',
+        'member_id',
         'executive_id',
         'division_id',
     ];

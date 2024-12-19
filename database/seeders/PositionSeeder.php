@@ -16,7 +16,7 @@ class PositionSeeder extends Seeder
 
         foreach ($data as $item) {
             Position::create([
-                'user_id' => $item[0],
+                'member_id' => $item[0],
                 'executive_id' => $item[1],
                 'division_id' => $item[2],
             ]);

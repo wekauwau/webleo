@@ -10,7 +10,7 @@ return new class extends Migration
     {
         Schema::create('position', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained();
+            $table->foreignId('member_id')->constrained();
             $table->foreignId('executive_id')->nullable()->constrained();
             $table->foreignId('division_id')->nullable()->constrained();
             $table->timestamps();
