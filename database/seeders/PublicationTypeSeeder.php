@@ -9,7 +9,7 @@ class PublicationTypeSeeder extends Seeder
 {
     public function run(): void
     {
-        $data = [['Kegiatan'], ['Berita'], ['Wawasan']];
+        $data = [['Kegiatan'], ['Wawasan'], ['Berita']];
 
         foreach ($data as $item) {
             PublicationType::create([
