@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
             DivisionSeeder::class,
             PositionSeeder::class,
             PublicationTypeSeeder::class,
+            PublicationSeeder::class,
         ]);
     }
 }
